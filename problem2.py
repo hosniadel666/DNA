@@ -28,7 +28,8 @@ def problem2_4():
   random.seed(70)
   for i in range(0,10):
     lis.append(random.random()*5+30)
-    
+  print(lis)
+  
 def problem2_5():
   random.seed(171)
   for i in range(0,10):
@@ -69,7 +70,7 @@ def minimum(lis):
   return min_
 
 def problem2_8(temp_list):
-  print("Average:",average(temp_list))
-  print("High",maximum(temp_list))
-  print("Low",minimum(temp_list))
+  print("Average: ",average(temp_list))
+  print("High: ",maximum(temp_list))
+  print("Low: ",minimum(temp_list))
 
