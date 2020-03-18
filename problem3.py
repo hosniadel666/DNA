@@ -5,7 +5,7 @@ def problem3_1(txtfilename):
         print(line, end = "")
         sum = sum + len(line)
     print ("\n",end = "")
-    print(sum)
+    print("There are",sum,"letters in the file.")
     
 nlis = [23,64,23,46,12,24]          # list
 atup = ("c","e","a","d","b")        # tuple
