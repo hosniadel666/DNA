@@ -2,9 +2,10 @@ def problem3_1(txtfilename):
     f = open(txtfilename)
     sum = 0
     for line in f:
-        print(line)
+        print(line, end = "")
         sum = sum + len(line)
-    print (sum)
+    print ("\n",end = "")
+    print(sum)
     
 nlis = [23,64,23,46,12,24]          # list
 atup = ("c","e","a","d","b")        # tuple
@@ -21,7 +22,7 @@ def problem3_3(month, day, year):
 dic = {"January":1 , "February":2 , "March":3 ,"April" : 4,"May" : 5,"June" : 6,"July":7,"August":8,"September":9,
        "October":10,"November":11,"December":12}
 def problem3_4(mon, day, year):
-    print(str(day)+"/"+str(dic[mon])+"/"+str(year))
+    print(str(dic[mon])+"/"+str(day)+"/"+str(year))
 
 def problem3_5(name):  
     phone_numbers = {"abbie":"(860) 123-4535", "beverly":"(901) 454-3241","james": "(212) 567-8149", "thomas": "(795) 342-9145"}
