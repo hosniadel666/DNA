@@ -1,12 +1,9 @@
-#%%
 import sys
 import csv
 import statistics
-#%%
-"""
-detect function is to open the CSV file and read its contents into memory 
-and return the name of DNA's owner if exist 
-"""
+
+#detect function is to open the CSV file and read its contents into memory 
+#and return the name of DNA's owner if exist 
 def detect(csv_file,lis):
     # open the database file
     f = open(csv_file)
@@ -24,7 +21,7 @@ def detect(csv_file,lis):
             return key
     return "No match"
    
-#%%
+# STR_cal to calculate the longest consecutive sequence of repeated STR
 def STR_cal(file1):
     #open text file (a sequence of STR)
     file = open (file1)
@@ -67,7 +64,7 @@ def STR_cal(file1):
             while tline[temp : temp+8] == string2:
                 cnt = cnt + 1
                 temp = temp +8
-            # append a consecutive sequence of repeated     
+            # append a consecutive sequence of repeated STR    
             dic_STR[string2].append(cnt)
             cnt = 0        
     lis2 = []
@@ -79,7 +76,6 @@ def STR_cal(file1):
     file.close()
     return lis2 
 
-#%% 
 dic_STR = {}
 # check the command line parameters
 if len(sys.argv) == 3 :
